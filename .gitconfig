@@ -1,0 +1,18 @@
+[user]
+	email = mike2718@gmail.com
+	name = Mike Akiba
+	signingkey = 17C22010D29A50BC
+[tar "tar.xz"]
+    command = xz -c
+[tar "tar.zst"]
+    command = zstd -c
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[http]
+	version = HTTP/1.1
+[merge]
+	ff = false
+[pull]
+	ff = only

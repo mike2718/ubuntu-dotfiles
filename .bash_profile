@@ -8,10 +8,8 @@ PATH="/home/mike/bin:${PATH}"
 
 LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}"
 
-LANG=en_US.UTF-8
-export LANG
-
-TERM="xterm-256color"
+#LANG=en_US.UTF-8
+#export LANG
 
 #export XDG_CONFIG_HOME="${HOME}/.config"
 #export GOPATH="${XDG_DATA_HOME}/go"
@@ -38,15 +36,10 @@ else
     export BROWSER
 fi
 
-# xorrisofs刻录用
-MKISOFS="xorrisofs"
 # 强制xorrisofs使用最低写入速度写入
 CDR_SPEED=1
 
 RANDOM=$(od -vAn -N2 -tu2 < /dev/urandom)
-
-# rar默认压缩参数
-#RAR='-m5 -rr5 -s -md64 -ol'
 
 # curl的代理只用这些环境变量
 #export http_proxy="http://127.0.0.1:7890"
@@ -55,7 +48,6 @@ RANDOM=$(od -vAn -N2 -tu2 < /dev/urandom)
 #export https_proxy="http://127.0.0.1:7890"
 #export HTTP_PROXY="${http_proxy}"
 
-#INFODIR="/usr/share/info:/usr/local/share/info"
 
 #[[ -f ~/.bashrc ]] && . ~/.bashrc
 #[[ -f ~/.bash_login ]] && . ~/.bash_login
