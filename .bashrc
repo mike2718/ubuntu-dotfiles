@@ -158,7 +158,7 @@ function path(){
 }
 
 # Ubuntu 默认
-umask 002
+#umask 002
 
 # direnv钩子
 eval "$(direnv hook bash)"

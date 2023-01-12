@@ -16,10 +16,10 @@ alias gcc='gcc -Wall -Wpedantic -Wextra'
 alias clang='clang -Wall -Wpedantic -Wextra'
 alias poweroff='sudo shutdown -h now'
 alias reboot='sudo shutdown -r now'
-alias L='|$PAGER'
-alias N='>/dev/null 2>&1'
-alias N1='>/dev/null'
-alias N2='2>/dev/null'
+#alias L='|$PAGER'
+#alias N='>/dev/null 2>&1'
+#alias N1='>/dev/null'
+#alias N2='2>/dev/null'
 
 # git命令
 alias gs='git status'
@@ -56,13 +56,13 @@ alias gpgd='gpg --decrypt'
 
 
 # 自用
-alias ls='ls -h -l --color=auto --time-style=+"%Y-%m-%d %H:%M"'
+#alias ls='ls -h -l --color=auto --time-style=+"%Y-%m-%d %H:%M"'
 alias lh='ls -lh --color=auto'
 alias l.='ls -d .* --color=auto'
-alias dir='ls -ba'
 alias cal='cal -S -m --color=auto'
 alias diff='diff -rauN --color=auto'
 # 使用单词级别比较的diff
 #alias diff='git diff --no-index --color-words'
 alias ip='ip --color=auto'
 alias fdisk='fdisk --color'
+
