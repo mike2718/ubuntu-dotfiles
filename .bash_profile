@@ -36,7 +36,7 @@ else
     export BROWSER
 fi
 
-# 强制xorrisofs使用最低写入速度写入
+# 强制xorrisofs使用最低写入速度
 CDR_SPEED=1
 
 RANDOM=$(od -vAn -N2 -tu2 < /dev/urandom)
@@ -49,7 +49,5 @@ RANDOM=$(od -vAn -N2 -tu2 < /dev/urandom)
 #export HTTP_PROXY="${http_proxy}"
 
 
-#[[ -f ~/.bashrc ]] && . ~/.bashrc
-#[[ -f ~/.bash_login ]] && . ~/.bash_login
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 if [ -f ~/.bash_login ]; then . ~/.bash_login; fi
