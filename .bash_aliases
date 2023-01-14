@@ -1,14 +1,15 @@
-#
-# 自用命令别名
+#!/bin/bash
+#### 自用
 alias c='clear'
 alias s='sync'
 alias e='exit'
-alias rm='rm -f'
+alias rm='rm -I'
 alias bc='bc -ql'
 alias cp='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1'
 #alias mv='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1 --remove-source-files'
 alias wipe='shred -uvz'
-alias date='date +"%F %T"'
+#alias date='date +"%F %T"'
+alias date='date +"%Y/%-m/%d %-H:%M"'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
 alias astyle='astyle -A1 -p -s4 -xC80 -c'
 alias pcc='pcc -Wall -Wpedantic -Wextra'
@@ -20,6 +21,8 @@ alias reboot='sudo shutdown -r now'
 #alias N='>/dev/null 2>&1'
 #alias N1='>/dev/null'
 #alias N2='2>/dev/null'
+
+alias vi='nvi'
 
 # git命令
 alias gs='git status'

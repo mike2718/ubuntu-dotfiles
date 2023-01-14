@@ -1,12 +1,11 @@
 #!/bin/bash
 # shellcheck source=.bash_profile
-#
-#. /usr/share/clang/bash-autocomplete.sh
 
 #PATH="/home/mike/amule/bin:/home/mike/bin:/usr/local/bin:${PATH}"
-PATH="/home/mike/bin:${PATH}"
-
-LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}"
+export PATH="$HOME/bin:${PATH}"
+export GOPATH="$HOME/go"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+export LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}"
 
 #LANG=en_US.UTF-8
 #export LANG
