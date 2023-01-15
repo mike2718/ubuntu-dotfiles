@@ -45,7 +45,7 @@ RANDOM=$(od -vAn -N2 -tu2 < /dev/urandom)
 #export HTTPS_PROXY="http://127.0.0.1:7890"
 # 其他代理
 #export https_proxy="http://127.0.0.1:7890"
-#export HTTP_PROXY="${http_proxy}"
+#export HTTP_PROXY="http://127.0.0.1:7890"
 
 
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi

@@ -158,8 +158,8 @@ function path(){
     IFS=$old
 }
 
-# Ubuntu 默认
-#umask 002
+# Ubuntu 默认！
+umask 002
 
 # direnv钩子
 eval "$(direnv hook bash)"

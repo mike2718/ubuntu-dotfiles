@@ -9,7 +9,7 @@ alias cp='rsync --archive --compress -hh --info=stats1,progress2 --modify-window
 #alias mv='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1 --remove-source-files'
 alias wipe='shred -uvz'
 #alias date='date +"%F %T"'
-alias date='date +"%Y/%-m/%d %-H:%M"'
+alias date='date +"%Y/%m/%d %H:%M"'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
 alias astyle='astyle -A1 -p -s4 -xC80 -c'
 alias pcc='pcc -Wall -Wpedantic -Wextra'
