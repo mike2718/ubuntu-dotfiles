@@ -165,5 +165,4 @@ umask 002
 eval "$(direnv hook bash)"
 
 
-
 # vim: set et sw=4 sts=4 tw=80 ft=sh:

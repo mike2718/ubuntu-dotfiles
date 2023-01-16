@@ -7,9 +7,10 @@ alias rm='rm -I'
 alias bc='bc -ql'
 alias cp='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1'
 #alias mv='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1 --remove-source-files'
-alias wipe='shred -uvz'
+#alias wipe='shred -uvz'
+alias wipe='shred --verbose --random-source=/dev/urandom -n1 --zero'
 #alias date='date +"%F %T"'
-alias date='date +"%+Y/%m/%d %H:%M"'
+alias date='date +"%+Y/%-m/%d %k:%M"'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
 alias astyle='astyle -A1 -p -s4 -xC80 -c'
 alias pcc='pcc -Wall -Wpedantic -Wextra'
@@ -21,8 +22,6 @@ alias reboot='sudo shutdown -r now'
 #alias N='>/dev/null 2>&1'
 #alias N1='>/dev/null'
 #alias N2='2>/dev/null'
-
-alias vi='nvi'
 
 # git命令
 alias gs='git status'
@@ -68,4 +67,9 @@ alias diff='diff -rauN --color=auto'
 #alias diff='git diff --no-index --color-words'
 alias ip='ip --color=auto'
 alias fdisk='fdisk --color'
+alias vi='nvi'
+alias ducks='du -cks * | sort -rn | head'
 
+
+
+# vim: set et sw=4 sts=4 tw=80 ft=sh:

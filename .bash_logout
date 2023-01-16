@@ -10,3 +10,5 @@ fi
 #### 自己添加
 clear
 reset
+
+# vim: set et sw=4 sts=4 tw=80 ft=sh:
