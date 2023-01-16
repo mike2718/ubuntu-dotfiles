@@ -1,17 +1,11 @@
 #!/bin/bash
 # shellcheck source=.bash_profile
 
-#PATH="/home/mike/amule/bin:/home/mike/bin:/usr/local/bin:${PATH}"
-export PATH="$HOME/bin:${PATH}"
 export GOPATH="$HOME/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+export PATH="$HOME/bin:/usr/local/go/bin:$GOPATH/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}"
 
-#LANG=en_US.UTF-8
-#export LANG
-
-#export XDG_CONFIG_HOME="${HOME}/.config"
-#export GOPATH="${XDG_DATA_HOME}/go"
+export LANG=en_US.UTF-8
 
 TZ='Asia/Shanghai'
 export TZ
