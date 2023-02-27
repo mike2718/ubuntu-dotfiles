@@ -11,7 +11,7 @@ alias cp='rsync --archive --compress -hh --info=stats1,progress2 --modify-window
 alias wipe='shred -v -z --iterations=1 --random-source=/dev/urandom'
 #alias date='date +"%F %T"'
 alias date='date +"%+Y/%-m/%d %k:%M"'
-alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL'
+alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL -e7'
 alias astyle='astyle -A1 -p -s4 -xC80 -c'
 alias pcc='pcc -Wall -Wpedantic -Wextra'
 alias gcc='gcc -Wall -Wpedantic -Wextra'
