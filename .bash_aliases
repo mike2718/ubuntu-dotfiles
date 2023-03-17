@@ -69,6 +69,7 @@ alias ip='ip --color=auto'
 alias fdisk='fdisk --color'
 alias vi='nvi'
 alias ducks='du -cks * | sort -rn | head'
+alias zstd='/usr/local/bin/zstd --rm -v'
 
 
 
