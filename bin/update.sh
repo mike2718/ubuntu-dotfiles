@@ -1,5 +1,5 @@
 #/bin/bash
-sudo apt -y update
-sudo apt -y upgrade
+sudo apt update
+sudo apt upgrade -y
 #sudo grub-mkconfig -o /boot/grub/grub.cfg
 #fc-cache -fv
