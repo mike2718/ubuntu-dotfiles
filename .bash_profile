@@ -2,7 +2,7 @@
 # shellcheck source=.bash_profile
 
 export GOPATH="$HOME/go"
-export PATH="$HOME/bin:/usr/local/go/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:/usr/local/go/bin:$GOPATH/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/lib:${LD_LIBRARY_PATH}"
 
 export LANG=en_US.UTF-8
